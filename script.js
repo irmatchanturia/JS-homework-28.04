@@ -90,3 +90,38 @@
 // console.log(typeof promptTest);
 // document.write(promptDiff);
 //კომენტარი
+
+
+let num1 = +prompt("შეიყვანე პირველი რიცხვი")
+let num2 = +prompt("შეიყვანე მეორე რიცხვი")
+let operator = prompt("შეიყვანე სასურველი მოქმედება")
+let answer
+
+switch(operator){
+    case "/":
+        if(num2===0){
+            alert("0-ზე გაყოფა არ შეიძლება")
+        }else{
+            answer=num1/num2
+        }
+        break;
+
+    case "+":
+
+        answer=num1 + num2
+        break;
+
+    case "-":
+        answer=num1-num2
+        break;
+
+    case "*":
+        answer=num1*num2
+        break;
+
+    default:
+        "არასწორი ოპერატორი")
+        break;
+
+}
+console.log(answer)
