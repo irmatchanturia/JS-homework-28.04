@@ -92,36 +92,60 @@
 //კომენტარი
 
 
-let num1 = +prompt("შეიყვანე პირველი რიცხვი")
-let num2 = +prompt("შეიყვანე მეორე რიცხვი")
-let operator = prompt("შეიყვანე სასურველი მოქმედება")
-let answer
+// let num1 = +prompt("შეიყვანე პირველი რიცხვი")
+// let num2 = +prompt("შეიყვანე მეორე რიცხვი")
+// let operator = prompt("შეიყვანე სასურველი მოქმედება")
+// let answer
 
-switch(operator){
-    case "/":
-        if(num2===0){
-            alert("0-ზე გაყოფა არ შეიძლება")
-        }else{
-            answer=num1/num2
-        }
-        break;
+// switch(operator){
+//     case "/":
+//         if(num2===0){
+//             alert("0-ზე გაყოფა არ შეიძლება")
+//         }else{
+//             answer=num1/num2
+//         }
+//         break;
 
-    case "+":
+//     case "+":
 
-        answer=num1 + num2
-        break;
+//         answer=num1 + num2
+//         break;
 
-    case "-":
-        answer=num1-num2
-        break;
+//     case "-":
+//         answer=num1-num2
+//         break;
 
-    case "*":
-        answer=num1*num2
-        break;
+//     case "*":
+//         answer=num1*num2
+//         break;
 
-    default:
-        "არასწორი ოპერატორი")
-        break;
+//     default:
+//         "არასწორი ოპერატორი"
+//         break;
 
-}
-console.log(answer)
+// }
+// console.log(answer)
+
+
+let promptTest = +prompt("შეიყვანე რიცხვი")
+let promptTestSecond = +prompt("შეიყვანე მეორე რიცხვი")
+
+console.log(Math.pow(promptTest, 3))
+console.log(Math.sqrt(promptTestSecond))
+console.log(Math.abs(promptTest))
+console.log(Math.round(promptTestSecond))
+
+console.log(isNaN(promptTest))
+console.log(isFinite(promptTestSecond))
+
+
+let promptString = prompt("შენი საყვარელი ფერი")
+let text = " რა ლამაზი ფერია!"
+
+console.log(promptString.includes("ჩემი"))
+console.log(promptString.length)
+console.log(promptString.replace("ჩემი", "შენი"))
+console.log(promptString.concat(text))
+console.log(promptString.trimStart())
+
+
